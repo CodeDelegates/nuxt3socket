@@ -27,7 +27,7 @@ onMounted(() => {
   }
 
   $socket.onmessage = ({ data }: any) => {
-    console.log("data", data)
+    alert(data)
     message.value = data
   }
   $socket.onclose = function () {
